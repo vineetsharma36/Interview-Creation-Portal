@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Interview Creation Portal</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>fetchi</servlet-name>
+    <servlet-class>com.scaler.ICP.FetchI</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fetchi</servlet-name>
+    <url-pattern>/fetchi</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>fetchc</servlet-name>
+    <servlet-class>com.scaler.ICP.FetchC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fetchc</servlet-name>
+    <url-pattern>/fetchc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>schedule</servlet-name>
+    <servlet-class>com.scaler.ICP.Schedule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>schedule</servlet-name>
+    <url-pattern>/schedule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>com.scaler.ICP.Update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>upcominginterviews</servlet-name>
+    <servlet-class>com.scaler.ICP.UpcomingInterviews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>upcominginterviews</servlet-name>
+    <url-pattern>/upcominginterviews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>allinterviews</servlet-name>
+    <servlet-class>com.scaler.ICP.AllInterviews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allinterviews</servlet-name>
+    <url-pattern>/allinterviews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sendemail</servlet-name>
+    <servlet-class>com.scaler.ICP.SendEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sendemail</servlet-name>
+    <url-pattern>/sendemail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>uploadresume</servlet-name>
+    <servlet-class>com.scaler.ICP.UploadResume</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadresume</servlet-name>
+    <url-pattern>/uploadresume</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
